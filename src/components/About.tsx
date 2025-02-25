@@ -48,7 +48,8 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div variants={itemVariants}>
             <p className="text-gray-600 mb-6 leading-relaxed">
-            I’m Radioane Khoubbane, a passionate Frontend Developer with a year of hands-on experience creating dynamic and user-friendly websites. Currently, I’m a student at ALX Software Engineering, where I’m honing my skills and expanding my knowledge in modern web technologies.
+            Hello! I'm Radionae Khoubbane
+            I'm a passionate frontend developer with experience 1 years in building responsive and interactive websites. With a keen eye for aesthetics and functionality, I aim to create web experiences that are both beautiful and highly functional.
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
             Working independently, I specialize in transforming ideas into elegant, functional designs that provide seamless user experiences. My journey into web development began with a curiosity about the inner workings of the internet, and it has grown into a professional pursuit to craft exceptional digital solutions.

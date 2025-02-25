@@ -37,7 +37,7 @@ const Hero = () => {
     }
   };
 
-  const name = "Radioane Khoubbane".split('');
+  const name = "Radioane       Khoubbane".split('');
 
   const imageVariants = {
     hidden: { opacity: 0, x: 50 },
@@ -63,7 +63,7 @@ const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center relative overflow-hidden bg-gradient-to-b">
-      <div className="absolute inset-0 bg-[url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDY0amI2ZHU5ajRuZnVucWx3cnBnbDQxZDZuczhuaHYzcG5pYzV3byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UNHplVba2fweBfkLHv/giphy.gif')] bg-cover bg-center opacity-5" />
+      <div className="absolute inset-0 bg-[url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWltZXNqcjA5Y2tpMXdzbDZ4N3NxcXJjNmRvZXV3bms2ZHhtNnNvYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/crwwGNqIMccLXpD10F/giphy.gif')] bg-cover bg-center opacity-5" />
       
       <div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center relative z-10">
         {/* Left Content */}
@@ -131,7 +131,7 @@ const Hero = () => {
             className="relative"
           >
             <p className="text-xl text-gray-600 mb-12 max-w-2xl">
-              Frontend Developer | Creative Thinker
+            I design and develop clean, modern, and visually engaging websites.
             </p>
             <motion.div
               className="absolute -left-8 top-1/2"

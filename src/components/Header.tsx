@@ -4,148 +4,23 @@ import { Menu, X, Code2, Terminal } from 'lucide-react';
 
 const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false);
-
   const navItems = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
-
-  const logoVariants = {
-    initial: {
-      opacity: 0,
-      scale: 0.5,
-    },
-    animate: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        duration: 0.5,
-        staggerChildren: 0.1
-      }
-    }
-  };
-
-  const letterVariants = {
-    initial: {
-      y: -20,
-      opacity: 0
-    },
-    animate: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        stiffness: 200
-      }
-    }
-  };
-
-  const codeIconVariants = {
-    animate: {
-      rotate: [0, 360],
-      transition: {
-        duration: 20,
-        repeat: Infinity,
-        ease: "linear"
-      }
-    }
-  };
-
-  const glowVariants = {
-    animate: {
-      boxShadow: [
-        "0 0 10px rgba(124, 58, 237, 0.5)",
-        "0 0 20px rgba(59, 130, 246, 0.5)",
-        "0 0 10px rgba(236, 72, 153, 0.5)",
-        "0 0 10px rgba(124, 58, 237, 0.5)"
-      ],
-      transition: {
-        duration: 4,
-        repeat: Infinity,
-        ease: "linear"
-      }
-    }
-  };
 
   return (
     <header className="fixed w-full bg-white/90 backdrop-blur-sm z-50 py-4 px-6 shadow-sm">
       <nav className="max-w-7xl mx-auto flex justify-between items-center">
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={logoVariants}
-          className="relative flex items-center gap-2"
-        >
-          <motion.div
-            variants={glowVariants}
-            animate="animate"
-            className="relative p-3 rounded-lg bg-gradient-to-r from-purple-600 via-blue-500 to-pink-500"
-          >
+        {/* Logo */}
+        <motion.div className="relative flex items-center gap-2">
+          <motion.div className="relative p-3 rounded-lg bg-gradient-to-r from-purple-600 via-blue-500 to-pink-500">
             <motion.div className="flex items-center gap-1">
-              <motion.span
-                variants={letterVariants}
-                className="text-2xl font-bold text-white"
-              >
-                R
-              </motion.span>
-              <motion.span
-                variants={letterVariants}
-                className="text-2xl font-bold text-white"
-              >
-                K
-              </motion.span>
+              <motion.span className="text-2xl font-bold text-white">R</motion.span>
+              <motion.span className="text-2xl font-bold text-white">K</motion.span>
             </motion.div>
-            
-            <motion.div
-              className="absolute -top-1 -right-1 w-3 h-3 bg-blue-400 rounded-full"
-              animate={{
-                scale: [1, 1.2, 1],
-                opacity: [0.5, 1, 0.5],
-              }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                repeatType: "reverse"
-              }}
-            />
-            
-            <motion.div
-              className="absolute -bottom-1 -left-1 w-2 h-2 bg-purple-400 rounded-full"
-              animate={{
-                scale: [1, 1.3, 1],
-                opacity: [0.5, 1, 0.5],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "reverse"
-              }}
-            />
-          </motion.div>
-
-          <motion.div
-            variants={codeIconVariants}
-            animate="animate"
-            className="absolute -right-6 top-1/2 -translate-y-1/2"
-          >
-            <Code2 className="w-4 h-4 text-purple-500" />
-          </motion.div>
-
-          <motion.div
-            className="absolute -left-4 top-1/2 -translate-y-1/2"
-            animate={{
-              rotate: [0, 360],
-              scale: [1, 1.2, 1],
-            }}
-            transition={{
-              duration: 3,
-              repeat: Infinity,
-              repeatType: "reverse"
-            }}
-          >
-            <Terminal className="w-3 h-3 text-blue-500" />
           </motion.div>
         </motion.div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden md:flex items-center space-x-8">
           {navItems.map((item) => (
             <motion.a
               key={item}
@@ -157,6 +32,17 @@ const Header = () => {
               {item}
             </motion.a>
           ))}
+
+          {/* Download CV Button */}
+          <motion.a
+            href="http://127.0.0.1:5500/portfolio/Pdf/Radioane%20Koubbane%20(3).pdf"
+            download
+            className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition duration-300"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Download CV
+          </motion.a>
         </div>
 
         {/* Mobile Navigation */}
@@ -184,6 +70,15 @@ const Header = () => {
               {item}
             </a>
           ))}
+          
+          {/* CV Button in Mobile Menu */}
+          <a
+            href="http://127.0.0.1:5500/portfolio/Pdf/Radioane%20Koubbane%20(3).pdf"
+            download
+            className="block text-center px-6 py-3 bg-purple-600 text-white hover:bg-purple-700 transition duration-300"
+          >
+            Download CV
+          </a>
         </motion.div>
       )}
     </header>
