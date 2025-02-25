@@ -50,10 +50,10 @@ const Projects = () => {
     {
       title: "Portfolio Website",
       description: "A dynamic portfolio website showcasing projects and skills with smooth animations.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80",
+      image: "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3diazJndDFpbDl4cXFkc2N0ZGF0MGV1Y2wwdWFtNGFmd3luazk1byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LkxiDPFHOpfQrDi2xH/giphy.gif",
       tags: ["React", "Framer Motion", "Tailwind CSS"],
       liveLink: "#",
-      githubLink: "#"
+      githubLink: "https://github.com/radwaneinbox/portfolioPor"
     }
   ];
 

@@ -84,7 +84,7 @@ const About = () => {
               className="relative z-10"
             >
               <img
-                src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80"
+                src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjcwa3R3bmt5ZW15d2NwNTQwaDZ1azI4OWYxYXM2NHF2Mzh4NGpibyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/u2pmTWUi0MXjyrMaVj/giphy.webp"
                 alt="About Me"
                 className="rounded-lg shadow-xl"
               />

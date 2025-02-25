@@ -62,8 +62,8 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center relative overflow-hidden bg-gradient-to-b from-purple-50 to-white">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-5" />
+    <section id="home" className="min-h-screen flex items-center relative overflow-hidden bg-gradient-to-b">
+      <div className="absolute inset-0 bg-[url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDY0amI2ZHU5ajRuZnVucWx3cnBnbDQxZDZuczhuaHYzcG5pYzV3byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UNHplVba2fweBfkLHv/giphy.gif')] bg-cover bg-center opacity-5" />
       
       <div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center relative z-10">
         {/* Left Content */}
@@ -197,7 +197,7 @@ const Hero = () => {
             className="relative z-10"
           >
             <img
-              src="https://images.pexels.com/photos/90764/man-studio-portrait-light-90764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              src="http://127.0.0.1:5500/portfolio/images/8c93458c-db7c-4459-9b23-7cfc42034ae3.jpg"
               alt="Profile"
               className="rounded-2xl shadow-2xl"
             />
