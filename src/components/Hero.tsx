@@ -197,7 +197,7 @@ const Hero = () => {
             className="relative z-10"
           >
             <img
-              src="http://127.0.0.1:5500/portfolio/images/8c93458c-db7c-4459-9b23-7cfc42034ae3.jpg"
+              src="https://media.licdn.com/dms/image/v2/D4E03AQHpOZPVmEouAA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730480292291?e=1746662400&v=beta&t=Y5zI3H2XtqLjnU0QtoWRmbV6M2q5TLCbZ4q4wO3tXmY"
               alt="Profile"
               className="rounded-2xl shadow-2xl"
             />
